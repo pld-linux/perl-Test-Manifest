@@ -9,12 +9,12 @@ Summary:	Test::Manifest - interact with a t/test_manifest file
 Summary(pl):	Test::Manifest - wspó³praca z plikiem t/test_manifest
 Name:		perl-Test-Manifest
 Version:	0.91
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-Test-Simple
 %endif
@@ -37,7 +37,8 @@ plików z testami, aby by³y wykonywane we w³a¶ciwej kolejno¶ci.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -52,5 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitelib}/Test/*.pm
+%{perl_vendorlib}/Test/*.pm
 %{_mandir}/man3/*
