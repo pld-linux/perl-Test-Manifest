@@ -8,12 +8,12 @@
 Summary:	Test::Manifest - interact with a t/test_manifest file
 Summary(pl):	Test::Manifest - wspó³praca z plikiem t/test_manifest
 Name:		perl-Test-Manifest
-Version:	0.91
-Release:	2
+Version:	0.92
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d33af86aaca8b5cce23504dd386752fd
+# Source0-md5:	4f3c134e0d12a62ffc9ac28cdb78507d
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{?_without_tests:0}%{!?_without_tests:1}
