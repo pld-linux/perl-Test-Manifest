@@ -39,7 +39,7 @@ plików z testami, aby by³y wykonywane we w³a¶ciwej kolejno¶ci.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
