@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Test
-%define	pnam	Manifest
+%define		pdir	Test
+%define		pnam	Manifest
 Summary:	Test::Manifest - interact with a t/test_manifest file
 Summary(pl):	Test::Manifest - wspó³praca z plikiem t/test_manifest
 Name:		perl-Test-Manifest
