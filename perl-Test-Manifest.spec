@@ -8,7 +8,7 @@
 Summary:	Test::Manifest - interact with a t/test_manifest file
 Summary(pl):	Test::Manifest - wspó³praca z plikiem t/test_manifest
 Name:		perl-Test-Manifest
-Version:	0.8
+Version:	0.9
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
@@ -16,11 +16,6 @@ Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-26
 %if %{?_without_tests:0}%{!?_without_tests:1}
-BuildRequires:	perl-File-Find-Rule
-BuildRequires:	perl-Test-Data
-BuildRequires:	perl-Text-Diff
-BuildRequires:	perl-Test-Pod
-BuildRequires:	perl-Test-Prereq
 BuildRequires:	perl-Test-Simple
 %endif
 BuildArch:	noarch
