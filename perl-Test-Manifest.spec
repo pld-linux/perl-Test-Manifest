@@ -8,7 +8,7 @@
 Summary:	Test::Manifest - interact with a t/test_manifest file
 Summary(pl):	Test::Manifest - wspó³praca z plikiem t/test_manifest
 Name:		perl-Test-Manifest
-Version:	0.9
+Version:	0.91
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
