@@ -10,7 +10,8 @@ Summary(pl):	Test::Manifest - wspó³praca z plikiem t/test_manifest
 Name:		perl-Test-Manifest
 Version:	0.93
 Release:	1
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a46b6185410c2fd8b1a2efd6fea94d9e
