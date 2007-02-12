@@ -6,7 +6,7 @@
 %define		pdir	Test
 %define		pnam	Manifest
 Summary:	Test::Manifest - interact with a t/test_manifest file
-Summary(pl):	Test::Manifest - wspó³praca z plikiem t/test_manifest
+Summary(pl.UTF-8):   Test::Manifest - wspÃ³Å‚praca z plikiem t/test_manifest
 Name:		perl-Test-Manifest
 Version:	1.14
 Release:	1
@@ -29,11 +29,11 @@ directory in ascii-betical order during make test unless you say
 otherwise.  This leads to some interesting naming schemes for test files
 to get them in the desired order.
 
-%description -l pl
-MakeMaker zak³ada, ¿e chcemy podczas make test uruchamiaæ wszystkie
-pliki .t z katalogu t/ w kolejno¶ci asciibetycznej, o ile nie podamy
-innej kolejno¶ci. To prowadzi do interesuj±cych schematów nazywania
-plików z testami, aby by³y wykonywane we w³a¶ciwej kolejno¶ci.
+%description -l pl.UTF-8
+MakeMaker zakÅ‚ada, Å¼e chcemy podczas make test uruchamiaÄ‡ wszystkie
+pliki .t z katalogu t/ w kolejnoÅ›ci asciibetycznej, o ile nie podamy
+innej kolejnoÅ›ci. To prowadzi do interesujÄ…cych schematÃ³w nazywania
+plikÃ³w z testami, aby byÅ‚y wykonywane we wÅ‚aÅ›ciwej kolejnoÅ›ci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
