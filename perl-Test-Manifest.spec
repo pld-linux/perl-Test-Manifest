@@ -13,8 +13,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6c4e391aab2a42e6edb0970c45da31cd
+URL:		http://search.cpan.org/dist/Test-Manifest/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -26,8 +27,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 MakeMaker assumes that you want to run all of the .t files in the t/
 directory in ascii-betical order during make test unless you say
-otherwise.  This leads to some interesting naming schemes for test files
-to get them in the desired order.
+otherwise. This leads to some interesting naming schemes for test
+files to get them in the desired order.
 
 %description -l pl.UTF-8
 MakeMaker zakłada, że chcemy podczas make test uruchamiać wszystkie
